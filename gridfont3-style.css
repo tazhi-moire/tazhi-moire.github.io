@@ -158,8 +158,8 @@ exclusion
 	grid-row: 1 / 3;
 	z-index: 6;
 	background: 
-		url(images/one.svg),
-		url(images/noun_square_138133_grn.svg),
+		url(images/no1.svg),
+		url(images/noun_square_138133_verde.svg),
 		radial-gradient(
       		circle at top right,
       		hsla(183, 85%, 55%, 0.8),
@@ -177,7 +177,7 @@ exclusion
 	z-index: 5;
 	background: 
 		url(images/noun_torus_112342_lime.svg),
-		url(images/two.svg),
+		url(images/no2.svg),
 		radial-gradient(
       		circle at top left,
       		hsla(183, 85%, 55%, 0.8),
@@ -194,8 +194,8 @@ exclusion
 	grid-row: 5 / 7;
 	z-index: 3;
 	background: 
-		url(images/three.svg),
-		url(images/noun_Pyramid_112339_lavender.svg),
+		url(images/no3.svg),
+		url(images/noun_Pyramid_112339_purple.svg),
 		radial-gradient(
       		circle at bottom left,
       		hsla(183, 85%, 55%, 0.8),
