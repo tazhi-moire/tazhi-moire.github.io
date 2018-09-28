@@ -184,7 +184,7 @@ exclusion
       		hsla(344, 85%, 55%, 0.4)
       	);
 	background-size: cover, contain;
-	background-position: bottom, right;
+	background-position: bottom, top right;
 	background-repeat: no-repeat;
 	background-blend-mode: soft-light, overlay, saturation;
 }
@@ -202,7 +202,7 @@ exclusion
       		hsla(351, 85%, 55%, 0.4)
       	);
 	background-size: contain, cover;
-	background-position: right, top;
+	background-position: top right, top;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay, multiply, darken;
 	
