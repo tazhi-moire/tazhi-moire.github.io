@@ -166,9 +166,9 @@ img {
 }
 
 .grid > div:nth-child(7) {
-	grid-column: 4 / 9;
+	grid-column: 7 / 12;
 	grid-row: 2 / 10;
-	z-index: 0;
+	z-index: 1;
 	background: 
 		radial-gradient(
       		circle at bottom left,
