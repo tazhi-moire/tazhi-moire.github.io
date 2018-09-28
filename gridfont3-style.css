@@ -9,12 +9,7 @@ html {
 body {
   	font-family: 'Jost*', 'Geneva', Helvetica, sans-serif;
   	font-weight: normal;
-  	background: 
-  		url(images/squared.svg),
-  		linear-gradient(to right, #8f8f8f, #efefef);
-	background-size: cover;
-	background-position: top;
-	background-blend-mode: color-burn;
+  	background: linear-gradient(to right, #8f8f8f, #efefef);
 }
 
 @font-face{
@@ -25,14 +20,14 @@ body {
 
 header {
 	display: grid;
-	grid-template-columns: repeat(8,1fr);
+	grid-template-columns: repeat(12,1fr);
 	grid-auto-rows: minmax(6em, auto);
 	grid-gap: 1em;
 	color: #fff;
 }
 
 header > h1 {
-	grid-column: 3 / 9;
+	grid-column: 5 / 11;
 	font-family: /*'Soyuz-Grotesk-Bold',*/'Jost*', serif;
 	font-weight: 400;
 	font-size: 4em;
@@ -44,7 +39,7 @@ h2 {
 	font-weight: 400;
 }
 
-circle { 
+/*circle { 
 	mix-blend-mode: hard-light;
 }
 
@@ -53,7 +48,7 @@ svg {
 	max-width: 100%;
 	grid-column: 2 / 3;
 	padding-top: 3em;
-}
+}*/
 
 a {
 	text-decoration: none;
@@ -66,12 +61,11 @@ img {
 
 .horiz-rule {
 	border-top: 4px solid #fff;
-	/*margin-top: 2em;*/
 }
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(8,1fr);
+	grid-template-columns: repeat(12,1fr);
 	grid-auto-rows: minmax(6em, auto);
 	grid-gap: 1em;
 	color: #fff;
@@ -91,66 +85,29 @@ img {
 }
 
 .grid > div:nth-child(odd) {
-	/*background: hsla(185, 85%, 55%, 0.8);
-	border-radius: 0.25em;*/
-	/*padding: 1em 2em;*/
 	margin: 0;
 }
 
 .grid > div:nth-child(even) {
-	/*background: hsla(345, 90%, 45%, 0.8);
-	border-radius: 0.25em;*/
-	/*padding: 1em 2em;*/
 	margin: 0;
 }
 
-/*
-multiply 		
-screen 	
-overlay 
-darken
-lighten 
-color-dodge 
-color-burn
-saturation 
-color 
-hue
-luminosity
-difference
-exclusion
-*/
-
 .grid > div:nth-child(1) {
-	grid-column: 3 / 5;
+	grid-column: 5 / 8;
 	grid-row: 1 / 3;
 	z-index: 1;
-	/*background:
-		radial-gradient(
-      		circle at top right,
-      		hsla(183, 85%, 55%, 0.8),
-      		hsla(344, 85%, 55%, 0.4)
-      	);*/
 }
 
 .grid > div:nth-child(2) {
-	grid-column: 4 / 6;
+	grid-column: 8 / 11;
 	grid-row: 3 / 5;
 	z-index: 6;
-	/*background: 
-		radial-gradient(
-      		circle at top right,
-      		hsla(183, 85%, 55%, 0.8),
-      		hsla(344, 85%, 55%, 0.4)
-      	);*/
 }
 
 .grid > div:nth-child(3) {
-	grid-column: 3 / 5;
-	grid-row: 5 / 7;
+	grid-column: 6 / 9;
+	grid-row: 6 / 8;
 	z-index: 5;
-	/*background: 
-		hsla(21, 85%, 55%, 0.4);
-	background-blend-mode: color-dodge;*/
 }
 
 .grid > div:nth-child(4) {
@@ -213,7 +170,6 @@ exclusion
 	grid-row: 2 / 10;
 	z-index: 0;
 	background: 
-		url(images/noun_bend_112341_lavender.svg),
 		radial-gradient(
       		circle at bottom left,
       		hsla(43, 85%, 50%, 0.85),
@@ -225,30 +181,12 @@ exclusion
 	background-blend-mode: color-burn, hue;
 }
 
-.grid > div:nth-child(9) {
-	grid-column: 7 / 9;
-	grid-row: 3 / 4;
-	z-index: 6;
-	background:  
-		url(images/nine.svg),
-		url(gridassets/images/squiggle.svg),
-		hsla(351, 85%, 55%, 0.4);
-	background-size: contain;
-	background-position: left, left;
+.grid > div:nth-child(8) {
+	grid-column: 2 / 9;
+	grid-row: 1 / 9;
+	z-index: 0;
+	background: url(images/noun_dodecahedron_138145_pink15.svg);
+	background-size: cover;
+	background-position: top;
 	background-repeat: no-repeat;
-	background-blend-mode: color-dodge, darken;
-}
-
-.grid > div:nth-child(10) {
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;
-	z-index: 6;
-	background: hsla(21, 85%, 55%, 0.4);
-	background-blend-mode: lighten;
-}
-
-.grid > div:nth-child(11) {
-	grid-column: 4 / 5;
-	grid-row: 2 / 3;
-	z-index: 6;
 }
