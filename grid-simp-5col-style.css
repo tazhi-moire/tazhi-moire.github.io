@@ -155,3 +155,6 @@ exclusion
 	grid-row: 11 / 12;
 }
 
+.current {
+	color: #EE2121;
+}
