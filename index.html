@@ -5,28 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W.I.Design</title>
-  <link rel="stylesheet" href="grid-simp-5col-style.css">
-   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now-alt" type="text/css"/>
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/renner" type="text/css"/> 
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/fairfax-hd" type="text/css"/>
+  <link rel="stylesheet" href="style20190807.css">
   <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
+
 <header>
-	<h1>WILLIAM<br>INGLIS<br>DESIGN</h1>
+		<h1>WILLIAM INGLIS DESIGN</h1>
+	<nav>
+		<ul>
+			<li><a href="portfolio-branding-20190731.html"><h3>_&nbsp;Branding</h3></a></li>
+			<li><a href="portfolio-menu-20190731.html"><h3>_&nbsp;Restaurant Menu & Icons</h3></a></li>
+			<li><a href="portfolio-booklet-20190731.html"><h3>_&nbsp;Booklet</h3></a></li>
+		</ul>
+	</nav>
 </header>
+
 <div class="grid">
-		<div class="one">
-		<a href="branding.html"><h3>_&nbsp;Branding</h3></a>
+	<div class="one">
+		<p>&#x1F44B;&nbsp;Hello!<br>My name is Will and I am a graphic designer by trade.<br>I hacked this portfolio website together with found bits of code.<br>Please get in touch if you like what you see.</p>
+		<div class="contact">
+			 <a href="mailto:winglisdesign@gmail.com"><h3>&#9648; winglisdesign@gmail.com</h3></a>
 		</div>
-		<div class="two">
-		<a href=""><h3>_&nbsp;Menu & Icons</h3></a>
-		</div>
-		<div class="three">
-		<a href=""><h3>_&nbsp;Booklets</h3></a>
-		</div>
+	</div>	
 </div>
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+</script>
+
 </body>
 </html>
