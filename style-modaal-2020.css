@@ -115,6 +115,12 @@ ul {
 	margin: 0;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid #8c8c8c;
+  border-bottom: none;
+}
+
 /* HOMEPAGE GRID START */
 .grid-hm {
 	display: grid;
@@ -207,27 +213,27 @@ div.card > .pointer {
 }
 
 .modaal-content-container > div.third:nth-child(3n+1) {
-	grid-column: 2 / 4;
+	grid-column: 6 / 8;
 }
 
 .modaal-content-container > div.third:nth-child(3n+2) {
-	grid-column: 4 / 6;
-}
-
-.modaal-content-container > div.third:nth-child(3n+3) {
-	grid-column: 6 / 8;
-}
-
-.modaal-content-container > div.third:nth-child(3n+4) {
 	grid-column: 2 / 4;
 }
 
-.modaal-content-container > div.third:nth-child(3n+5) {
+.modaal-content-container > div.third:nth-child(3n+3) {
 	grid-column: 4 / 6;
 }
 
-.modaal-content-container > div.third:nth-child(3n+6) {
+.modaal-content-container > div.third:nth-child(3n+4) {
 	grid-column: 6 / 8;
+}
+
+.modaal-content-container > div.third:nth-child(3n+5) {
+	grid-column: 2 / 4;
+}
+
+.modaal-content-container > div.third:nth-child(3n+6) {
+	grid-column: 4 / 6;
 }
 
 .modaal-content-container div.fifth:nth-child(5n) {
@@ -252,6 +258,26 @@ div.card > .pointer {
 
 .modaal-content-container > div.fifth:nth-child(5n+5) {
 	grid-column: 1 / 5;
+}
+
+.modaal-content-container > div.thrd:nth-child(5n+1) {
+	grid-column: 5 / 9;
+}
+
+.modaal-content-container > div.thrd:nth-child(5n+2) {
+	grid-column: 1 / 5;
+}
+
+.modaal-content-container > div.thrd:nth-child(5n+3) {
+	grid-column: 5 / 9;
+}
+
+.modaal-content-container > div.thrd:nth-child(5n+4) {
+	grid-column: 1 / 5;
+}
+
+.modaal-content-container > div.thrd:nth-child(5n+5) {
+	grid-column: 5 / 9;
 }
 
 div.third h4 {
@@ -377,6 +403,11 @@ div.third h4 {
 		padding: 3em 0;
 	}
 
+	.modaal-content-container > .cntr-sm {
+		grid-column: 7 / 15;
+		padding: 3em 0;
+	}
+
 	.modaal-content-container > div.half:nth-child(odd) {
 		grid-column: 3 / 11;
 	}
@@ -386,51 +417,59 @@ div.third h4 {
 	}
 
 	.modaal-content-container > div.third:nth-child(3n+1) {
-		grid-column: 7 / 9;
+		grid-column: 13 / 15;
 	}
 
 	.modaal-content-container > div.third:nth-child(3n+2) {
-		grid-column: 10 / 12;
+		grid-column: 7 / 9;
 	}
 
 	.modaal-content-container > div.third:nth-child(3n+3) {
-		grid-column: 13 / 15;
+		grid-column: 10 / 12;
 	}
 
 	.modaal-content-container > div.third:nth-child(3n+4) {
-		grid-column: 7 / 9;
+		grid-column: 13 / 15;
 	}
 
 	.modaal-content-container > div.third:nth-child(3n+5) {
-		grid-column: 10 / 12;
-	}
-
-	.modaal-content-container > div.third:nth-child(3n+6) {
-		grid-column: 13 / 15;
-	}
-
-	.modaal-content-container > div.third:nth-child(3n+7) {
 		grid-column: 7 / 9;
 	}
 
-	.modaal-content-container > div.third:nth-child(3n+8) {
+	.modaal-content-container > div.third:nth-child(3n+6) {
 		grid-column: 10 / 12;
 	}
 
-	.modaal-content-container > div.third:nth-child(3n+9) {
+	.modaal-content-container > div.third:nth-child(3n+7) {
 		grid-column: 13 / 15;
 	}
 
-	.modaal-content-container > div.third-1 {
-		grid-column: 5 / 9;
+	.modaal-content-container > div.third:nth-child(3n+8) {
+		grid-column: 7 / 9;
 	}
 
-	.modaal-content-container > div.third-2 {
+	.modaal-content-container > div.third:nth-child(3n+9) {
+		grid-column: 10 / 12;
+	}
+
+	.modaal-content-container > div.thrd:nth-child(5n+1) {
 		grid-column: 9 / 13;
 	}
 
-	.modaal-content-container > div.third-3 {
+	.modaal-content-container > div.thrd:nth-child(5n+2) {
+		grid-column: 5 / 9;
+	}
+
+	.modaal-content-container > div.thrd:nth-child(5n+3) {
+		grid-column: 9 / 13;
+	}
+
+	.modaal-content-container > div.thrd:nth-child(5n+4) {
 		grid-column: 13 / 17;
+	}
+
+	.modaal-content-container > div.thrd:nth-child(5n+5) {
+		grid-column: 5 / 9;
 	}
 
 	.modaal-content-container > #who {
@@ -527,12 +566,21 @@ div.third h4 {
 	}
 
 	.modaal-content-container > div {
-		grid-column: 4 / 18;
+		grid-column: 5 / 17;
 	}
 
 	.modaal-content-container > .cntrd {
 		grid-column: 7 / 15;
 		padding: 3em 0;
+	}
+
+	.modaal-content-container > .cntr-sm {
+		grid-column: 8 / 14;
+		padding: 3em 0;
+	}
+
+	.modaal-content-container > .wide {
+		grid-column: 3 / 19;
 	}
 
 	.modaal-content-container > div.half:nth-child(odd) {
