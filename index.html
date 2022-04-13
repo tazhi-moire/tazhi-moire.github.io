@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,121 +7,117 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
   <link rel="manifest" href="images/favicons/manifest.json">
   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#ffbf00">
-  <link rel="stylesheet" href="modaal.css">
-  <link rel="stylesheet" href="style-modaal-2020.css">
-	
-  <title>WLNGLS</title>
+  <link rel="stylesheet" href="accordo.css">
+  <title>WhatDesign</title>
 </head>
 
-<body style="background: linear-gradient(170deg, hsla(277, 2%, 99%, 1), hsla(0, 5%, 90%, 1));">
-  <header>
-    <h1>William Inglis</h1><h1>Design</h1>
-  </header>
+<body>
 
-	<nav class="grid-hm">
+<header>
+<h1>William Inglis Design</h1>
+</header>
 
-	    <div class="card">
-	      <a href="#FireDrill" class="inline"><img src="images/FireDrill-brndmrk.svg"></a>
-	      <div class="pointer"><a href="#FireDrill" class="inline"><h2 class="wht">Logos &#x2192;</h2></a></div>
-	      <div id="FireDrill" style="display:none;">
-    		<div class="dark"><img src="images/firedrill-logo-2016-v2.svg"></div>
-    		<p class="proj">Logo redesign for FireDrill, the SaaS platform of AttackIQ, an information security startup.</p>
-    		<div style="padding-top: 2em;"><img src="images/PDX-Logo-web.png"></div>
-    		<p class="proj">Logo design for an internal product design team.</p>
-	      </div>
-	    </div>
+<div class="accordion">
+        <!-- span to target fix closing accordion -->
+        <span class="target-fix" id="accordion"></span>
+         
+        <!-- First Accordion Option -->
+        <div>
+            <!-- span to target fix accordion -->
+            <span class="target-fix" id="accordion1"></span>
+            
+            <!-- Link to open accordion, hidden when open --> 
+            <a href="#accordion1" id="open-accordion1" title="open">Rigpa Deutschland 1</a>
+            
+            <!-- Link to close accordion, hidden when closed -->
+            <a href="#accordion" id="close-accordion1" title="close">Rigpa Deutschland 1</a> 
+            
+            <!-- Accorion content goes in this div -->
+            <div class="accordion-content">
+                <img src="images/Stress-mein-Freund-Plakat-2022.png" class="padded">
+                <p class="padded">Print poster for a meditation course.</p>
+            </div>
+        </div>
 
-	    <div class="card">
-	      <a href="#icons" class="inline"><img src="images/AIQ-FireDrill-icon-Win-cred-theft.svg"></a>
-	      <div class="pointer"><a href="#icons" class="inline"><h2>Icons &#x2192;</h2></a></div>
-	      <div class="grid" id="icons" style="display:none;">
-	      	
-    		<p class="proj">Icon design for FireDrill, the SaaS platform of AttackIQ, an information security startup.</p>
-    		<div class="third"><img src="../images/AIQ-FireDrill-icons-team-members-green.svg"><h4>Team Members</h4></div>
-		    <div class="third"><img src="../images/AIQ-FireDrill-icons-reports-green.svg"><h4>Reports</h4></div>
-		    <div class="third"><img src="../images/AIQ-FireDrill-icons-assets-green.svg"><h4>Assets</h4></div>
-		    <div class="third"><img src="../images/AIQ-FireDrill-icons-tests-green.svg"><h4>Tests</h4></div>
-		    <div class="third"><img src="../images/AIQ-FireDrill-icons-alerting-red-badge.svg"><h4>Alerting</h4></div>
-		    <div class="third"><img src="../images/AIQ-FireDrill-icons-schedule-green.svg"><h4>Schedule</h4></div>
-		    <div class="third"><img src="../images/AIQ_FireDrill_icon_ransomware.svg"><h4>Ransomware</h4></div>
-		    <div class="third"><img src="../images/AIQ-FireDrill-icon-Win-cred-theft.svg"><h4>Credential Theft</h4></div>
-		    
-		    <div style="padding:2.5em 0;"><hr></div>
-		    <p class="proj">Self-initiated icon design for a ramen restaurant.</p>
-		    <div class="thrd"><img src="../images/irrasshai-ramen-edamame.svg"></div>
-		    <div class="thrd"><img src="../images/irrasshai-ramen-tonkotsu.svg"></div>
-		    <div class="thrd"><img src="../images/irrasshai-ramen-grn-onion.svg"></div>
-		    <div class="thrd"><img src="../images/irrasshai-ramen-chicken.svg"></div>
-		    <div class="thrd"><img src="../images/irrasshai-ramen-kamaboko.svg"></div>
-		    <div><img src="../images/irrasshai-ramen-wall-graphic-crop.jpg"></div>
-	      </div>
-	    </div>
+        <!-- Second Accordion Option -->
+        <div>
+            <span class="target-fix" id="accordion2"></span>
+            <a href="#accordion2" id="open-accordion2" title="open">Rigpa Deutschland 2</a>
+            <a href="#accordion" id="close-accordion2" title="close">Rigpa Deutschland 2</a> 
+            <div class="accordion-content">
+                <img src="images/Revolution-Mind-Heart-A2.png" class="padded">
+                <p class="padded">Print poster for a meditation course.</p>
+            </div>
+        </div>
 
-	    <div class="card">
-	      <a href="#styleguide" class="inline"><img src="images/FireDrill-styleguide-lnks.svg"></a>
-	      <div class="pointer"><a href="#styleguide" class="inline"><h2>Styleguide &#x2192;</h2></a></div>
-	      <div id="styleguide" style="display:none;">
-	      	<p class="proj">Styleguide for FireDrill, the SaaS platform of AttackIQ, an information security startup.</p>
-    		<div><img src="images/FireDrill-styleguide-color.svg"></div>
-    		<div><img src="images/FireDrill-styleguide-links.svg"></div>
-    		<div><img src="images/FireDrill-styleguide-buttons.svg"></div>
-    		<div><img src="images/FireDrill-styleguide-typog-titles.svg"></div>
-    		<div><img src="images/FireDrill-styleguide-typog-btns1.svg"></div>
-	      </div>
-	    </div>
+        <!-- Third Accordion Option -->
+        <div>
+            <span class="target-fix" id="accordion3"></span>
+            <a href="#accordion3" id="open-accordion3" title="open">Rigpa Deutschland 3</a>
+            <a href="#accordion" id="close-accordion3" title="close">Rigpa Deutschland 3</a>
+            <div class="accordion-content">
+                <img src="images/De-influence-yourself-man.png" class="padded">
+                <p class="padded">Social media graphic for an online seminar.</p>
+            </div>
+        </div>
 
-	    <div class="card">
-	    	<a href="#catalog" class="inline"><img src="images/soviet_poster_catalog_pgs12-13.jpg"></a>
-	    	<div class="pointer"><a href="#catalog" class="inline"><h2>Catalog &#x2192;</h2></a></div>
-	    	<div id="catalog" style="display:none;">
-				<p class="proj">Catalog design for a Soviet poster exhibit.</p>
-				<div class="wide"><img src="images/soviet_poster_catalog_gallery_spread.jpg"></div>
-				<div class="wide"><img src="images/soviet_poster_catalog_pgs12-13.jpg"></div>
-				<div class="wide"><img src="images/soviet_poster_catalog_pgs18-19.jpg"></div>
-				<div class="wide"><img src="images/soviet_poster_catalog_pgs20-21.jpg"></div>
-			</div>
-		</div>
+        <!-- Fourth Accordion Option -->
+        <div>
+            <span class="target-fix" id="accordion4"></span>
+            <a href="#accordion4" id="open-accordion4" title="open">Authentic Presence</a>
+            <a href="#accordion" id="close-accordion4" title="close">Authentic Presence</a>
+            <div class="accordion-content">
+                <img src="images/CCST_19-cover.jpg">
+                <img src="images/CCST_19-contents.jpg">
+                <img src="images/CCST_19-pgs2-3.jpg">
+                <img src="images/CCST_19-pgs10-11.jpg">
+                <img src="images/CCST_19-pgs20-21.jpg">
+                <img src="images/CCST_19-back-cover.jpg">
+                <p>Booklet for a seminar training professional caregivers and hospice workers.</p>
+            </div>
+        </div>
 
-	    <div class="card">
-	    	<a href="#ccst" class="inline"><img src="images/CCST_19-back-cover.jpg"></a>
-	    	<div class="pointer"><a href="#ccst" class="inline"><h2>Booklet &#x2192;</h2></a></div>
-	    	<div id="ccst" style="display:none;">
-	    		<p class="proj">Booklet typography for a non-profit that trains end-of-life caregivers.</p>
-    				<div class="wide"><img src="images/CCST_19-cover.jpg"></div>
-				<div class="wide"><img src="images/CCST_19-contents.jpg"></div>
-				<div class="wide"><img src="images/CCST_19-pgs2-3.jpg"></div>
-				<div class="wide"><img src="images/CCST_19-pgs8-9.jpg"></div>
-				<div class="wide"><img src="images/CCST_19-pgs10-11.jpg"></div>
-				<div class="wide"><img src="images/CCST_19-pgs20-21.jpg"></div>
-				<div class="wide"><img src="images/CCST_19-back-cover.jpg"></div>
-		</div>
-	    </div>
-	    
-	    <div class="card">
-	    	<a href="#exp" class="inline"><img src="images/birthday-card-paula-sm.svg"></a>
-	    	<div class="pointer"><a href="#exp" class="inline"><h2>Experiments &#x2192;</h2></a></div>
-	    		<div id="exp" style="display:none;">
-	    			<p class="proj">Self-initiated projects.</p>
-					<div class="cntr-sm"><img src="../images/MOM_LUV.gif"></div>
-					<div class="cntrd"><img src="../images/birthday-card-paula.svg"></div>
-					<div class="cntrd"><img src="../images/postcard-namaste-20190519-B.jpg"></div>
-				</div>
-	    </div>
+        <!-- Fifth Accordion Option -->
+        <div>
+            <span class="target-fix" id="accordion5"></span>
+            <a href="#accordion5" id="open-accordion5" title="open">Attack IQ 1</a>
+            <a href="#accordion" id="close-accordion5" title="close">Attack IQ 1</a>
+            <div class="accordion-content">
+                <img src="images/firedrill-logo-2016-v2.svg" class="dark padded">
+                <p>Logo design for a cyber security SaaS (software-as-a-service).</p>
+            </div>
+        </div>
 
-	    <div class="card">
-	      <a href="#about" class="inline"><img src="images/info-icon-wngls.svg"></a>
-	      <div class="pointer"><a href="#about" class="inline"><h2 class="wht">About &#x2192;</h2></a></div>
-	      <div id="about" style="display:none;">
-	      	<div id="who"><h3>Hello,</h3><p>My name is Will. I work in the visual arts and design. My visual design work for websites has necessitated learning some HTML and CSS.</p><p>If you recognize that fifteen different colours of orange on the company website is not a professional way to present your work, then maybe I can help your team. Please send inquiries to:</p></div>
-			<p id="contact"><i><a href="mailto:whatdesign@protonmail.com">&#9648; whatdesign@protonmail.com</a></i></p>
-	      </div>
-	    </div> 
-  	</nav>
-  	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/modaal.js"></script>
-	<script>$(".inline").modaal();</script>
-	<script>$('.fullscreen').modaal({fullscreen: true});</script>
-	
+        <!-- Sixth Accordion Option -->
+        <div>
+            <span class="target-fix" id="accordion6"></span>
+            <a href="#accordion6" id="open-accordion6" title="open">Attack IQ 2</a>
+            <a href="#accordion" id="close-accordion6" title="close">Attack IQ 2</a>
+            <div class="accordion-content">
+                <img src="images/firedrill-ui-project-templates.jpg">
+                <p>Webpage user interaction re-design using a “card” layout.</p>
+            </div>
+        </div>
+
+        <!-- Seventh Accordion Option -->
+        <div>
+            <span class="target-fix" id="accordion7"></span>
+            <a href="#accordion7" id="open-accordion7" title="open">San Diego City College</a>
+            <a href="#accordion" id="close-accordion7" title="close">San Diego City College</a>
+            <div class="accordion-content">
+                <img src="images/soviet_poster_catalog_gallery_spread.jpg">
+                <img src="images/soviet_poster_catalog_pgs12-13.jpg">
+                <img src="images/soviet_poster_catalog_pgs18-19.jpg">
+                <img src="images/soviet_poster_catalog_pgs20-21.jpg">
+                <p>Catalog design for an art exhibit.</p>
+            </div>
+        </div>
+        
+    </div>
+
+<div class="readme">
+  <p>Please inquire via email at:</p>
+  <p><a href="mailto:whatdesign@pm.me"><i>whatdesign@pm.me</i></a></p>
+</div>
 </body>
-
 </html>
