@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Circular Std Book";
+    src: url("fonts/Circular Std Book.woff") format('woff');
+}
+
+@font-face {
+    font-family: "CircularStd-BookItalic";
+    src: url("fonts/CircularStd-BookItalic.woff") format('woff');
+    font-style: italic;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #f8f8f8;
+  font-family: 'Circular Std Book', Helvetica, sans-serif;
+}
+
+h1 {
+  color: #b7b7b7;
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+header {
+  position; sticky;
+  padding: 1rem 0 0 5vw;
+}
+
+img {
+  width: 100%;
+  height; auto;
+}
+
+.readme {
+  font-size: 1rem;
+  color: #22252b;
+  margin: 0 auto;
+  padding: 0 0 3rem;
+  width: 90%;
+}
+
+a {
+    color: #22252b;
+  }
+
+/*_________________  Accordion
+via pollardld at https://codepen.io/pollardld/pen/nqwXBJ
+________________________________________*/
+.accordion {
+  position: relative;
+  margin: 3rem auto 2rem;
+  width: 90%;
+}
+
+[id*="open-accordion"], [id*="close-accordion"] {
+  background: none;
+  border-top: 1px solid #b8b8b8;
+  line-height: 3rem;
+  height: 3.5rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  /*width: 99%;*/
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordion a {
+  color: #22252b;
+  font-size: 1.25em;
+  font-weight: normal;
+  padding-left: 1%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after, [id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordion-content {
+  background: #f8f8f8;
+  height: 0;
+  margin: -1px auto 0;
+  /*padding: 0 2.5%;*/
+  position: relative;
+  overflow: hidden;
+  /*width: 90%;*/
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordion span:target ~ .accordion-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordion span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordion span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordion span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+.dark {
+  background: #686868;
+  color: #f6f6f6;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  body {
+    display: grid;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-auto-rows: minmax(4em, auto);
+  }
+  
+  header {
+    position; sticky;
+    padding: 1rem 0 0;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .padded {
+    padding: 0 8rem;
+  }
+
+  .accordion {
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 1rem auto 3rem;
+    width: 900px;
+  }
+  
+  .readme {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+    padding: 0;
+  }
+}
