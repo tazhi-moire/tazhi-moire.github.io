@@ -50,16 +50,16 @@ a {
     color: #22252b;
   }
 
-/*_________________  Accordion
+/*_________________  project
 via pollardld at https://codepen.io/pollardld/pen/nqwXBJ
 ________________________________________*/
-.accordion {
+.project {
   position: relative;
   margin: 3rem auto 2rem;
   width: 90%;
 }
 
-[id*="open-accordion"], [id*="close-accordion"] {
+[id*="open-project"], [id*="close-project"] {
   background: none;
   border-top: 1px solid #b8b8b8;
   line-height: 3rem;
@@ -70,11 +70,11 @@ ________________________________________*/
   /*width: 99%;*/
 }
 
-[id*="close-accordion"] {
+[id*="close-project"] {
   display: none;
 }
 
-.accordion a {
+.project a {
   color: #22252b;
   font-size: 1.25em;
   font-weight: normal;
@@ -83,7 +83,7 @@ ________________________________________*/
   text-shadow: none;
 }
 
-[id*="open-accordion"]:after, [id*="close-accordion"]:after {
+[id*="open-project"]:after, [id*="close-project"]:after {
   content: "";
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -103,7 +103,7 @@ ________________________________________*/
   position: fixed;
 }
 
-.accordion-content {
+.project-content {
   background: #f8f8f8;
   height: 0;
   margin: -1px auto 0;
@@ -116,22 +116,22 @@ ________________________________________*/
   -moz-transition: all 0.1s ease;
 }
 
-.accordion span:target ~ .accordion-content {
+.project span:target ~ .project-content {
   display: block;
   height: auto;
   padding-bottom: 25px;
   padding-top: 10px;
 }
 
-.accordion span:target ~ [id*="close-accordion"] {
+.project span:target ~ [id*="close-project"] {
   display: block;
 }
 
-.accordion span:target ~ [id*="open-accordion"] {
+.project span:target ~ [id*="open-project"] {
   display: none;
 }
 
-.accordion span:target ~ [id*="close-accordion"]:after {
+.project span:target ~ [id*="close-project"]:after {
   border-top: 10px solid #333;
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -165,7 +165,7 @@ ________________________________________*/
     padding: 0 8rem;
   }
 
-  .accordion {
+  .project {
     position: relative;
     grid-column: 2;
     grid-row: 2;
